@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <meta charset="utf-8" />
+    <title>Air</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+    <header class="header">
+      <nav class="nav">
+        <a href="./index.html" class="logo">Air</a>
+        <ul class="nav-list">
+         
+          <li class="nav-item"><a href="./lviv.html" class="nav-link">Львів</a></li>
+          <li class="nav-item"><a href="./kyiv.html" class="nav-link">Київ</a></li>
+          <li class="nav-item"><a href="./odesa.html" class="nav-link">Одеса</a></li>
+          <li class="nav-item"><a href="./dnipro.html" class="nav-link">Дніпро</a></li>
+          <li class="nav-item"><a href="./kharkiv.html" class="nav-link">Харків</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="text">
+          <p>Забруднення повітря чинить небезпеку для здоров'я та життя людини і є причиною розвитку важких захворювань, зокрема серцево-судинних і онкологічних.
+      
+             Від наслідків забруднення щороку помирає 7 млн. осіб.
+            
+            Забруднення повітря є причиною респіраторних, інфекційних і серцевих захворювань, інсульту, раку легенів і ускладнень, пов'язаних з вагітністю».
+            
+            Експерти називають забруднення повітря «невидимим вбивцею», який щогодини забирає життя 800 осіб.</p>
+          </div>
+          <div class="diagram">
+            <canvas id="myChart"></canvas> 
+          </div>
+      </section>
+    </header>
+    <div class="section">
+      <section id="temp">
+        
+      </section>
+    <section class="map-sect">
+      <div id="map" class = "map"></div>
+      <span  id="city-aqi-container"></span> 
+    </section>
+   <section class="img-sect">
+       <img src="./css/green.png" alt="green" class="img-scale">
+       <img src="./css/yellow.png" alt="yellow" class="img-scale">
+       <img src="./css/orange.png" alt="orange" class="img-scale">
+       <img src="./css/red.png" alt="red" class="img-scale">
+       <img src="./css/purple.png" alt="purple" class="img-scale">
+       <img src="./css/dark.png" alt="dark" class="img-scale">
+   </section>
+  </div>
+<footer class="footer">
+  <div>
+  <ul class="list-footer">
+    <li class="item"><a href="" class="link">&#9829;</a></li>
+    <li class="item"><a href="" class="link">&#9827;</a></li>
+    <li class="item"><a href="" class="link">&#9824;</a></li>
+    <li class="item"><a href="" class="link">&#9830;</a></li>
+    
+  </ul></div>
+  <div >
+  <form action="" class="form">
+   <label for="">
+    <input type="text" class="input">
+   </label>
+   <button type="submit" class="btn"><b> Підписатися</b></button>
+  </form></div>
+</footer>
+
+
+    <script src="./index.js" type="module"></script>
+    
+</body>
 </html>
